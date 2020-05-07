@@ -53,7 +53,6 @@ UI.prototype.clearInputs = () => {
 const bookForm = document.getElementById("book-form");
 bookForm.addEventListener("submit", (e) => {
 	e.preventDefault();
-	const books = [];
 
 	// Get form values
 	const title = bookForm.querySelector("#title").value;
