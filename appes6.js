@@ -116,8 +116,8 @@ bookForm.addEventListener("submit", (e) => {
 });
 
 // Delete Book
-const boolList = document.getElementById("book-list");
-boolList.addEventListener("click", (e) => {
+const bookList = document.getElementById("book-list");
+bookList.addEventListener("click", (e) => {
 	e.preventDefault();
 	const ui = new UI();
 	ui.delBook(e.target);
@@ -126,3 +126,31 @@ boolList.addEventListener("click", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", Store.displayBook.bind(Store));
+
+// for (const key in localStorage) {
+// 	console.log(key);
+// }
+
+// for (let i = 0; i < localStorage.length; i++) {
+// 	const key = localStorage.key(i);
+// 	const value = localStorage.getItem(key);
+// 	console.log(`KEY: ${key} ==> VALUE: ${value}`);
+// }
+
+// for (const key in localStorage) {
+// 	if (localStorage.hasOwnProperty(key)) {
+// 		console.log(`${key} ===> ${localStorage.getItem(key)}`);
+// 	}
+// }
+
+// for (const key in localStorage) {
+// 	if (!localStorage.hasOwnProperty(key)) {
+// 		continue;
+// 	}
+// 	console.log(localStorage.getItem(key));
+// }
+
+// const keys = Object.keys(localStorage);
+// for (const i of keys) {
+// 	console.log(localStorage.getItem(i));
+// }
